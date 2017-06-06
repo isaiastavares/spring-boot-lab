@@ -15,7 +15,7 @@ public class Configuracao {
 	}
 
 	@Bean
-	public DataSource dataSource() {
+	public DataSource dataSource(){
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/listavip");
@@ -23,7 +23,5 @@ public class Configuracao {
 		dataSource.setPassword("root");
 		return dataSource;
 	}
-
-
 
 }
